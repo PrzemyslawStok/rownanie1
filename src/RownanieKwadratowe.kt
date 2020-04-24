@@ -10,6 +10,10 @@ class RownanieKwadratowe(val a: Double, val b: Double, val c: Double) {
     var x1i = 0.0
     var x2i = 0.0
 
+    fun wyswietlRownanie(){
+        println("Równanie: ${a}x^2+${b}x+${c}=0")
+    }
+
     fun obliczDelte(): Double {
         return b * b - 4 * a * c
     }

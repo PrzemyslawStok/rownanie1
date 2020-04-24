@@ -4,9 +4,9 @@ fun main(){
     var c = 2.0
 
     println("Program rozwiązuje równanie kwadratowe w postaci: ax^2+bx+c=0")
-    println("Wprowadź a:")
+    print("Wprowadź a:")
 
     a = readLine()!!.toDouble()
 
-    RownanieKwadratowe(a,b,c).wyswietlRozwiazania()
+    RownanieKwadratowe(a,b,c).wyswietlRownanie()
 }
