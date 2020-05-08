@@ -48,8 +48,13 @@ class RownanieKwadratowe(val a: Double, val b: Double, val c: Double) {
         }
         if (delta < 0) {
             println("Równanie nie posiada rozwiązań w zbiorze liczb rzeczywistych")
-            println("x1=${x1}+${x1i}i")
-            println("x2=${x2}+${x2i}i")
+
+            println("x1=${x1}$+${x1i}i")
+
+            if(x2i>=0)
+                println("x2=${x2}+${x2i}i")
+            else
+                println("x2=${x2}${x2i}i")
         }
     }
 
